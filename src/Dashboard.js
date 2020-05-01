@@ -43,7 +43,7 @@ export default function Dashboard() {
 const classes = useStyles();
 
 //CTX Store
-const {allChats, sendChatAction} = React.useContext(CTX);
+const {allChats, sendChatAction, user} = React.useContext(CTX);
 
 // console.log({allChats});
 
@@ -98,7 +98,7 @@ const [textValue, changeTextValue] = React.useState(''); //Hooks called
                         color="primary"
                         className= {classes.button}
                         onCLick={() => {
-                            sendChatAction(textValue);
+                            sendChatAction({from: user, msg: textValue, topic: activeTopic});
                             changeTextValue('');
                         }}
                     >

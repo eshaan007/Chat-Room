@@ -46,6 +46,8 @@ export default function Store(props) {
         socket = io(':3001');
     }
     
+    const user = 'eshaan' * Math.random(100).toFixed(2); 
+
     const [allChats] = React.useReducer(reducer, initState);
     
     return(
