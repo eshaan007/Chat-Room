@@ -57,7 +57,7 @@ const [textValue, changeTextValue] = React.useState(''); //Hooks called
         <div>
             <Paper className={classes.root}>
                 <Typography variant="h4" component="h4">
-                Chat app initialized.
+                Chat app initialized. YAAYYY!
                 </Typography>
                 <Typography variant="h5" component="h5">
                 {activeTopic}
