@@ -43,7 +43,7 @@ export default function Dashboard() {
 const classes = useStyles();
 
 //CTX Store
-const [allChats] = React.useContext(CTX);
+const {allChats, sendChatAction} = React.useContext(CTX);
 
 // console.log({allChats});
 
@@ -93,7 +93,16 @@ const [textValue, changeTextValue] = React.useState(''); //Hooks called
                     value={textValue}
                     onChange={e => changeTextValue(e.target.value)} // Calling Hooks
                     />
-                    <Button variant="contained" color="primary">
+                    <Button
+                        variant="contained" 
+                        color="primary"
+                        className= {classes.button}
+                        onCLick={() => {
+                            sendChatAction(textValue);
+                            changeTextValue('');
+                        }}
+                    >
+                    
                         Primary
                     </Button>
                 </div>    
