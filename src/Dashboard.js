@@ -21,7 +21,7 @@ const classes = useStyles();
                 Chat app initialized.
                 </Typography>
                 <Typography component="h5">
-                Topic Placeholder.
+                Topic Placeholder...
                 </Typography>
             </Paper>
         </div>
