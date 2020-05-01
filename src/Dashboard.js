@@ -102,8 +102,7 @@ const [textValue, changeTextValue] = React.useState(''); //Hooks called
                             changeTextValue('');
                         }}
                     >
-                    
-                        Primary
+                        Send
                     </Button>
                 </div>    
 
