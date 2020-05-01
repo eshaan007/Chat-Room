@@ -18,7 +18,7 @@ const classes = useStyles();
         <div>
             <Paper className={classes.root}>
                 <Typography variant="h4" component="h3">
-                Chat app
+                Chat app initialized.
                 </Typography>
                 <Typography component="h5">
                 Topic Placeholder.
