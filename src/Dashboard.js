@@ -79,7 +79,7 @@ const [textValue, changeTextValue] = React.useState(''); //Hooks called
                             allChats[activeTopic].map((chat, i) => (
                                 <div className={classes.flex} key={i}>
                                     <Chip label={chat.from} className={classes.chip } />
-                                    <Typography variant='body1' gutterBottom>chat.msg</Typography>
+                                    <Typography variant='body1' gutterBottom>{chat.msg}</Typography>
                                 </div>
                             ))
                         }
