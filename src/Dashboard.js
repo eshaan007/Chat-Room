@@ -97,7 +97,7 @@ const [textValue, changeTextValue] = React.useState(""); //Hooks called
                         variant="contained" 
                         color="primary"
                         className= {classes.button}
-                        onCLick={() => {
+                        onClick={() => {
                             sendChatAction({from: user, msg: textValue, topic: activeTopic});
                             changeTextValue('');
                         }}
